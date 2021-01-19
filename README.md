@@ -11,27 +11,26 @@ Requirements
 
 Data preparation
 
-(1) Downloading hg19.fa from http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/, and put it into /your path/hg19/.
+(1) Downloading 45 in invitro from The UniPROBE database is available at http://uniprobe.org , and put it into /your path/invitro/.
 
 (2) Pre-processing datasets.
 
     Usage:
+    
+    data_normal.py
+    
+    then
 
     bash process.sh <data path>
 
 Implementation
 
-Running FCNA
+Running FCNGRU
 
     Usage:
 
     bash run.sh <data path>
 
-Locating TFBSs
-
-    Usage:
-
-    bash locate.sh <data path> <trained model path>
 
 Predicting motifs
 
@@ -39,7 +38,4 @@ Predicting motifs
 
     bash motif.sh <data path> <trained model path>
 
-Refining the prediction performance
 
-    Usage:
-    Firstly encoding the located regions; Secondly running FCNAR on them.
